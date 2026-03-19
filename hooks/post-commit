@@ -1,0 +1,4 @@
+#!/bin/bash
+# Logs every commit to .claude-memory.md in the repo root
+# Copy to .git/hooks/post-commit in any repo you want tracked
+echo "$(date): $(git log -1 --pretty=%B)" >> "$(git rev-parse --show-toplevel)/.claude-memory.md"
