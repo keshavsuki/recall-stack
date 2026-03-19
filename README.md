@@ -58,7 +58,7 @@ Layer 4  Hindsight retain fires      --> extracts behavioral patterns
 ### One-command install
 
 ```bash
-git clone https://github.com/ksukirya/recall-stack.git
+git clone https://github.com/keshavsuki/recall-stack.git
 cd recall-stack
 bash setup.sh --obsidian ~/path/to/your/vault
 ```
@@ -164,7 +164,7 @@ Create the memory bank (one-time):
 ```bash
 curl -s -X PUT http://localhost:8888/v1/default/banks/claude-sessions \
   -H 'Content-Type: application/json' \
-  -d '{"description": "Claude Code session behavioral patterns"}'
+  -d '{"name": "claude-sessions"}'
 ```
 
 | Resource | URL |
@@ -269,7 +269,7 @@ Hindsight is free and open source. It uses your LLM API key to process memories.
 
 ## Credits
 
-Built by [@keshavsuki](https://github.com/ksukirya). Powered by [Hindsight](https://github.com/vectorize-io/hindsight) for behavioral learning.
+Built by [@keshavsuki](https://github.com/keshavsuki). Powered by [Hindsight](https://github.com/vectorize-io/hindsight) for behavioral learning.
 
 ---
 

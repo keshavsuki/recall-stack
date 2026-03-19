@@ -88,7 +88,7 @@ if command -v docker &> /dev/null; then
         # Create memory bank
         curl -sf -X PUT http://localhost:8888/v1/default/banks/claude-sessions \
           -H 'Content-Type: application/json' \
-          -d '{"description": "Claude Code session behavioral patterns"}' > /dev/null 2>&1
+          -d '{"name": "claude-sessions"}' > /dev/null 2>&1
 
         echo "[+] Layer 4: Hindsight running (API: localhost:8888, UI: localhost:9999)"
       fi
